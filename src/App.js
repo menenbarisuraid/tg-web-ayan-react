@@ -3,9 +3,6 @@ import { Container, Box, BottomNavigation, BottomNavigationAction } from '@mui/m
 import Main from './components/Main';
 import Employees from './components/Employees';
 import Profile from './components/Profile';
-import HomeIcon from '@mui/icons-material/Home';
-import PeopleIcon from '@mui/icons-material/People';
-import PersonIcon from '@mui/icons-material/Person';
 
 const App = () => {
   const [value, setValue] = useState(0);
@@ -24,9 +21,9 @@ const App = () => {
         }}
         showLabels
       >
-        <BottomNavigationAction label="Главная" icon={<HomeIcon />} />
-        <BottomNavigationAction label="Сотрудники" icon={<PeopleIcon />} />
-        <BottomNavigationAction label="Профиль" icon={<PersonIcon />} />
+        <BottomNavigationAction label="Главная" />
+        <BottomNavigationAction label="Сотрудники" />
+        <BottomNavigationAction label="Профиль" />
       </BottomNavigation>
     </Container>
   );
